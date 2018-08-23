@@ -1,4 +1,3 @@
-url: https://nirmaljeffrey.com
-enforce_ssl: nirmaljeffrey.com
 plugins:
-  - jekyll-sitemap
+  - jekyll-seo-tag
+  
