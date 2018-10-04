@@ -5,6 +5,12 @@
     <title>Glider</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -66,38 +72,20 @@
             flex-wrap: wrap;
         }
 
-        /* Create two unequal columns that sits next to each other */
-        /* Sidebar/left column */
-        .side {
-            -ms-flex: 30%;
-            /* IE10 */
-            flex: 30%;
-            background-color: #f2f2f1;
-            padding: 20px;
-        }
+       
 
         /* Main column */
         .main {
             -ms-flex: 70%;
             /* IE10 */
             flex: 70%;
-            background-color:#FFFFFF ;
+            background-color:#ffffff;
             padding: 20px;
         }
 
-        /* Fake image, just for this example */
-        .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-        }
+        
 
-        /* Footer */
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: #303030;
-        }
+       
 
         /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 700px) {
@@ -113,6 +101,88 @@
                 width: 100%;
             }
         }
+        /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.box:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+    .box {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 30%;
+      
+      padding: 2px 16px;
+      background-color: burlywood;
+      border-radius: 5px;
+    }
+  
+
+
     </style>
 </head>
 
@@ -123,20 +193,47 @@
   </div>
 
     <div class="navbar">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html">Awards</a>
-        <a href="index.html#education">Education</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html">About</a>
+        <a href="#">Experience</a>
+        <a href="#">Awards</a>
+        <a href="#">Education</a>
+        <a href="#">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
     </div>
 
     
         <div class="main">
             <h2>GLIDER</h2>
             <h5> November, 2014 - NIT, TRICHY</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
+            <div><div class="slideshow-container">
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/glider.jpg" style="width: 100%;">
+                    <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/cs.jpg"  style="width:100%;">
+                    <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/comingsoon.jpg"  style="width:100%;">
+                    <div class="text">Caption Three</div>
+                </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div></div>
             
             <p> We built this project back in 2014 using foam board and hot glue, to learn about the functions of rudder, aileron and flaps
             in a glider.</p>
@@ -144,11 +241,59 @@
            
         </div>
     </div>
+    <div align="center" style="background-color:#f2f2f5">
+<h2>Team Members</h2>
 
-    <div class="footer">
-        <h2>Footer</h2>
+    
+    <div class="box">
+        <h4><b>Mohan Krish</b></h4>
+        <p>Thiagarajar College Of Engineering</p>
+</div>
+<div style="padding:20px;"></div>
+<div class="box">
+    <h4><b>Meshac</b></h4>
+    <p>Thiagarajar College Of Engineering</p>
+</div>
+<div style="padding:20px;"></div>
     </div>
 
+
+
+    <footer>
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-5 copyright" >
+                    <p>
+                        Copyright &copy; 2018 Nirmal Jeffrey
+                    </p>
+                </div>
+               
+                
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+</script>
 </body>
 
 </html>
