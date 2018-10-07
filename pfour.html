@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Projects - Bluetooth controlled bot</title>
+    <title>Projects - LINE MARKER</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -15,13 +15,11 @@
         * {
             box-sizing: border-box;
         }
-
         /* Style the body */
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
         }
-
         /* Header/logo Title */
         .header {
             padding: 80px;
@@ -29,18 +27,15 @@
             background: #1abc9c;
             
         }
-
         /* Increase the font size of the heading */
         .header h1 {
             font-size: 40px;
         }
-
         /* Style the top navigation bar */
         .navbar {
             overflow: hidden;
             background-color: #111;
         }
-
         /* Style the navigation bar links */
         .navbar a {
             float: left;
@@ -50,18 +45,15 @@
             padding: 14px 20px;
             text-decoration: none;
         }
-
         /* Right-aligned link */
         .navbar a.right {
             float: right;
         }
-
         /* Change color on hover */
         .navbar a:hover {
             background-color:#818181;
             color: black;
         }
-
         /* Column container */
         .row {
             display: -ms-flexbox;
@@ -71,9 +63,7 @@
             /* IE10 */
             flex-wrap: wrap;
         }
-
        
-
         /* Main column */
         .main {
             -ms-flex: 70%;
@@ -82,18 +72,14 @@
             background-color:#ffffff;
             padding: 20px;
         }
-
         
-
        
-
         /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 700px) {
             .row {
                 flex-direction: column;
             }
         }
-
         /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
         @media screen and (max-width: 400px) {
             .navbar a {
@@ -101,19 +87,66 @@
                 width: 100%;
             }
         }
- 
-
-
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-
+        /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 .box:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
-
    
-
     .box {
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
@@ -124,8 +157,6 @@
       border-radius: 5px;
     }
   
-
-
     </style>
 </head>
 
@@ -147,30 +178,38 @@
 
     
         <div class="main">
-            <h2>BLUETOOTH CONTROLLED ARDUINO CAR</h2>
-            <h5> January , 2015 - TCE, MADURAI</h5>
-           
- 
- 
-
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="images/bcc.jpg" style="width:100%">
-<iframe class ="mySlides" width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
-  
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-  
-  </div>
-</div>
+            <h2>LINE MARKER</h2>
+            <h5> January - February, 2015 - TCE, MADURAI</h5>
+            <div><div class="slideshow-container">
             
-            <p> The bot is controlled through android smartphone . This project uses arduino uno, DC motors, and a bluetooth module which is powered by a rechargable battery.
-
-</p>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/glider.jpg" style="width: 100%;">
+                    <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/cs.jpg"  style="width:100%;">
+                    <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/comingsoon.jpg"  style="width:100%;">
+                    <div class="text">Caption Three</div>
+                </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div></div>
+            
+            <p> Line Marker is built using pvc pipes, window screens and bits of plywood. It is used in our college to mark lines in Volleyball, football, hockey, track and field.</p>
             <br>
            
         </div>
@@ -181,20 +220,11 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
 
     
     <div class="box">
-        <h4><b>Gunaseelan</b></h4>
+        <h4><b>Bala Hari Krishnan</b></h4>
         <p>Thiagarajar College Of Engineering</p>
 </div>
 <div style="padding:20px;"></div>
-<div class="box">
-    <h4><b>Jerome Hubert</b></h4>
-    <p>Thiagarajar College Of Engineering</p>
-</div>
-<div style="padding:20px;"></div>
-        <div class="box">
-    <h4><b>Vigneshwaran</b></h4>
-    <p>Thiagarajar College Of Engineering</p>
-</div>
-<div style="padding:20px;"></div>
+
     </div>
 
 
@@ -214,32 +244,24 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
     </footer>
     <!-- End footer -->
 <script>
-   var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
 </script>
 </body>
 
